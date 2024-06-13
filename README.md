@@ -1,5 +1,5 @@
 # Weather-Forecast
-https://ankushjagga.github.io/Weather-Forecast/
+
 ## Features 
 - It auto-displays the weather of the device's current location. This is achieved using navigator geolocation property which helps to get latitude and longitude of the user's position.
 - It lets user search weather of over 200,000 cities.
