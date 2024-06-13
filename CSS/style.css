@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  /* overflow: hidden; */
+}
+body {
+  background-color: black;
+  background-image: url("https://source.unsplash.com/1600x900/?weather,nature");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #393e46;
+  height: auto;
+  padding: 3%;
+  font-weight: bold;
+}
+.header p {
+  font-size: 50px;
+  color: rgba(58, 138, 141, 0.747);
+}
+.logo i {
+  color: rgba(58, 138, 141, 0.747);
+  margin: 0 0 0 17px;
+}
+.weather-card {
+  position: absolute;
+  top: 56%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 409px;
+  background-color: rgba(22, 214, 221, 0.747);
+  border-radius: 20px;
+  padding: 3rem;
+  width: 100%;
+}
+.weather-search input {
+  margin: 0 10px;
+  padding: 11px 13px;
+  border-radius: 12px;
+  width: calc(100% - 110px);
+  border: none;
+  outline: none;
+  font-size: 130%;
+}
+button {
+  padding: 10px 15px;
+  border-radius: 21px;
+  outline: none;
+  border: none;
+}
+button:hover {
+  cursor: pointer;
+  background-color: skyblue;
+  transition: all 0.2s ease-in-out;
+}
+.city-name,
+.temperature,
+.condition,
+.description,
+.humidity,
+.wind {
+  color: white;
+}
+.city-name {
+  margin: 8px 0px;
+  font-size: 36px;
+}
+.temperature {
+  margin: 2px 53px;
+  font-size: 31px;
+}
+.condition {
+  display: flex;
+  align-items: center;
+}
+.description {
+  font-size: 24px;
+}
+.humidity,
+.wind {
+  font-size: 28px;
+}
+.humidity {
+  margin-bottom: 3px;
+}
+.wind {
+  margin-top: 3px;
+}
+
+.weather-display.loading {
+  visibility: hidden;
+  height: 20px;
+  position: relative;
+  color: white;
+}
+.weather-display.loading:after {
+  visibility: visible;
+  content: "Loading...";
+  color: white;
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  font-size: 25px;
+}

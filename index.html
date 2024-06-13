@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/style.css" />
+        <link rel="shortcut icon" href="02d.png" type="image/x-icon">
+
+    <script
+      src="https://use.fontawesome.com/releases/v5.15.3/js/all.js"
+      data-auto-replace-svg="nest"
+    ></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;1,300&display=swap");
+    </style>
+    <link rel="stylesheet" href="CSS/Responsive.css" />
+    <title>weather-forecaster</title>
+  </head>
+  <body>
+    <div class="header">
+      <p>Weather forecast</p>
+      <div class="logo">
+        <i class="fas fa-cloud-moon-rain fa-2x"></i>
+      </div>
+    </div>
+    <div class="weather-card">
+      <div class="weather-search">
+        <input type="text" autocomplete="off" placeholder="Enter city name" />
+        <button class="btn"><i class="fas fa-search fa-2x"></i></button>
+      </div>
+      <div class="weather-display loading">
+        <h3 class="city-name">Weather In</h3>
+        <h2 class="temperature">°C</h2>
+        <div class="condition">
+          <img
+            src="https://openweathermap.org/img/wn/50n@2x.png"
+            alt="icon"
+            class="weather-icon"
+          />
+          <div class="description">cloudy</div>
+        </div>
+        <div class="humidity">Humidity</div>
+        <div class="wind">Wind:</div>
+      </div>
+    </div>
+  </body>
+  <script src="Javascript/index.js"></script>
+</html>
